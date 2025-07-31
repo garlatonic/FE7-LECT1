@@ -1,0 +1,5 @@
+* { margin: 0; padding: 0; border: 0; vertical-align: baseline; box-sizing: border-box; } 
+body { background: #fff; color: #000; } 
+ol, ul { list-style: none; } 
+table { border-collapse: collapse; border-spacing: 0; } 
+a { text-decoration: none; color: inherit; } 
