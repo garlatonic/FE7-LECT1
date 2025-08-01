@@ -1,8 +1,22 @@
-html { font: 16px; }
-body { background: ivory; }
-.header .inner { display: flex; justify-content: space-between; align-items: center; position: sticky; padding: 4rem 6rem; }
-.header .inner .gnb a { }
+html { font: 16px; } 
+body { background:#2c453f; } 
 
-section { margin: 6rem; padding: 6rem 8rem; background: #fff; }
-section article { margin-bottom: 4rem; }
-section h2 { margin-bottom: 2rem; font-size: 2.5rem; }
+
+/* header */
+.header .inner { display: flex; justify-content: space-between; align-items: center; position: sticky; padding: 2rem 2rem; } 
+.header .inner .logo a { font: 900 3rem "Orbitron", sans-serif; color: #fff; } 
+.header .inner .logo a:hover { color: transparent; -webkit-text-stroke: 1px #fff; text-stroke: 1px #fff; } 
+.header .inner .gnb a { font-size: 1.5rem; font-weight: bold; color: #333; } 
+
+
+/* section */
+section { margin: 6rem; padding: 6rem 8rem; background: #fff; } 
+section article { margin-bottom: 4rem; } 
+section h2 { margin-bottom: 2rem; font-size: 2.5rem; } 
+
+
+.main-article { display: flex; align-items: center; }
+.main-article .profile { display: flex; align-items: center; }
+.main-article .profile-image { flex: 4; }
+.main-article .profile-image figure img { width: 100%; }
+.main-article .profile-info { display: flex; flex-direction: column; align-items: center; flex: 7; }
