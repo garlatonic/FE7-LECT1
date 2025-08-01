@@ -1,5 +1,5 @@
 * { margin: 0; padding: 0; border: 0; vertical-align: baseline; box-sizing: border-box; } 
-body { position: relative; background: var(--color-primary); font: 400 16px "Roboto Condensed", "Pretendard", sans-serif; color: var(--color-gray-90); line-height: 1.5; } 
+body { position: relative; background: var(--color-primary); font: 400 16px "Pretendard", sans-serif; color: var(--color-gray-90); line-height: 1.5; } 
 ol, ul { list-style: none; } 
 table { border-collapse: collapse; border-spacing: 0; } 
 a { text-decoration: none; color: inherit; } 
