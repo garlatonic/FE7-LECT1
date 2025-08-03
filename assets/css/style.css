@@ -1,88 +1,112 @@
 /* header */
-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 10; }
-header::before { content: ""; position: absolute; top: 0; right: 0; width: 0; height: 0; border: 40px solid transparent; }
+header { position: fixed; top: 0; left: 0; width: 100%; z-index: 10; } 
+header::before { content: ""; position: absolute; top: 0; right: 0; width: 0; height: 0; border: 40px solid transparent; } 
 header .inner { display: flex; gap: 45px; position: relative; margin: var(--px-14) var(--px-20); } 
 header .inner .logo a { display: block; font: 900 var(--px-45) "Genos", sans-serif; line-height: 1; } 
 header .inner .logo a:hover { color: transparent !important; } 
-header .inner .gnb ol { margin-top: 9px; counter-reset: index; }
-header .inner .gnb ol li { display: flex; gap: var(--px-14); align-items: center; position: relative; counter-increment: index; }
-header .inner .gnb ol li.on::after { content: "표시선"; position: absolute; left: calc(100% + 20px); width: 40px; height: 2px; background: var(--color-gray-90); font-size: 0; }
-header .inner .gnb ol li::before { content: counter(index, decimal-leading-zero); font-size: var(--px-12); line-height: 200%; }
+header .inner .gnb ol { margin-top: 9px; counter-reset: index; } 
+header .inner .gnb ol li { display: flex; gap: var(--px-14); align-items: center; position: relative; counter-increment: index; } 
+header .inner .gnb ol li.on::after { content: "표시선"; position: absolute; left: calc(100% + 20px); width: 40px; height: 2px; background: var(--color-gray-90); font-size: 0; } 
+header .inner .gnb ol li::before { content: counter(index, decimal-leading-zero); font-size: var(--px-12); line-height: 200%; } 
 header .inner .gnb ol li a { display: block; font-size: var(--px-14); font-weight: 600; transition: .2s; } 
-header .inner .gnb ol li a:hover { transform: rotateY(30deg); transform-origin: left; }
+header .inner .gnb ol li a:hover { transform: rotateY(30deg); transform-origin: left; } 
 
 /* footer */
-footer { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 10; }
-footer .inner { display: flex; justify-content: space-between; align-items: center; padding: var(--px-14) var(--px-20); font-size: var(--px-12); }
-footer .inner .link { display: block; width: 35px; font-size: 0; aspect-ratio: 49 / 48; }
-footer .inner .link::before { content: "깃허브 아이콘"; display: block; width: 25px; margin: 5px; background: transparent no-repeat 50% / 25px auto; aspect-ratio: 49 / 48; transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1); }
-footer .inner .link::after { position: absolute; top: 0; }
+footer { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 10; } 
+footer .inner { display: flex; justify-content: space-between; align-items: center; padding: var(--px-14) var(--px-20); font-size: var(--px-12); } 
+footer .inner .link { display: block; width: 35px; font-size: 0; aspect-ratio: 49 / 48; } 
+footer .inner .link::before { content: "깃허브 아이콘"; display: block; width: 25px; margin: 5px; background: transparent no-repeat 50% / 25px auto; aspect-ratio: 49 / 48; transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1); } 
+footer .inner .link::after { position: absolute; top: 0; } 
 
 /* main */
-.main-page header::before { border-top-color: var(--color-gray-0); border-right-color: var(--color-gray-0);}
-.main-page header .inner .logo a { color: var(--color-gray-0); }
-.main-page header .inner .logo a:hover { -webkit-text-stroke: 1px var(--color-gray-0); text-stroke: 1px var(--color-gray-0); }
-.main-page header .inner .gnb ol li::before { color: var(--color-gray-0); }
+.main-page header::before { border-top-color: var(--color-gray-0); border-right-color: var(--color-gray-0); } 
+.main-page header .inner .logo a { color: var(--color-gray-0); } 
+.main-page header .inner .logo a:hover { -webkit-text-stroke: 1px var(--color-gray-0); text-stroke: 1px var(--color-gray-0); } 
+.main-page header .inner .gnb ol li::before { color: var(--color-gray-0); } 
 .main-page header .inner .gnb ol li a { color: var(--color-gray-0); } 
-.main-page footer .inner { color: var(--color-gray-0);}
-.main-page footer .inner .link::before { background-image: url("../images/github-mark-white-off.png"); }
-.main-page footer .inner .link:hover::before { background-image: url("../images/github-mark-white-on.png"); }
-.main-page footer .inner .link::after { background-image: url("../images/github-mark-black-off.png"); }
-.main-page footer .inner .link:hover::after { background-image: url("../images/github-mark-black-on.png"); }
+.main-page footer .inner { color: var(--color-gray-0); } 
+.main-page footer .inner .link::before { background-image: url("../images/github-mark-white-off.png"); } 
+.main-page footer .inner .link:hover::before { background-image: url("../images/github-mark-white-on.png"); } 
+.main-page footer .inner .link::after { background-image: url("../images/github-mark-black-off.png"); } 
+.main-page footer .inner .link:hover::after { background-image: url("../images/github-mark-black-on.png"); } 
 
 /* sub */
-.sub-page { background: var(--color-gray-0); }
-.sub-page header::before { border-top-color: var(--color-gray-90); border-right-color: var(--color-gray-90); }
-.sub-page header .inner .logo a { color: var(--color-gray-90); }
-.sub-page header .inner .logo a:hover { color: transparent; -webkit-text-stroke: 2px var(--color-gray-90); text-stroke: 2px var(--color-gray-90); }
-.sub-page header .inner .gnb ol li::before { color: var(--color-gray-90); }
+.sub-page { background: var(--color-gray-0); } 
+.sub-page header::before { border-top-color: var(--color-gray-90); border-right-color: var(--color-gray-90); } 
+.sub-page header .inner .logo a { color: var(--color-gray-90); } 
+.sub-page header .inner .logo a:hover { color: transparent; -webkit-text-stroke: 2px var(--color-gray-90); text-stroke: 2px var(--color-gray-90); } 
+.sub-page header .inner .gnb ol li::before { color: var(--color-gray-90); } 
 .sub-page header .inner .gnb ol li a { color: var(--color-gray-90); } 
-.sub-page footer .inner { color: var(--color-gray-90);}
-.sub-page footer .inner .link::before { background-image: url("../images/github-mark-black-off.png"); }
-.sub-page footer .inner .link:hover::before { background-image: url("../images/github-mark-black-on.png"); }
-.sub-page main .inner { margin: 160px 50px; }
+.sub-page footer .inner { color: var(--color-gray-90); } 
+.sub-page footer .inner .link::before { background-image: url("../images/github-mark-black-off.png"); } 
+.sub-page footer .inner .link:hover::before { background-image: url("../images/github-mark-black-on.png"); } 
+.sub-page main .inner { margin: 160px 50px; } 
 
 
 /* section */
-#profile { display: flex; justify-content: center; align-items: center; width: 100dvw; min-height: 100dvh; }
+#profile { display: flex; justify-content: center; align-items: center; width: 100dvw; min-height: 100dvh; } 
 #profile .inner { min-width: 1000px; margin: var(--px-80) 250px; padding: var(--px-40); background: var(--color-gray-0); box-shadow: 0 0 20px rgba(0,0,0,0.3); } 
 #profile .inner h2 { margin-bottom: var(--px-40); font-size: var(--px-40); } 
 
 /* index */
-section .main-article .profile { display: flex; justify-content: space-between; align-items: center; gap: var(--px-30); }
-section .main-article .profile-image { width: 40%; max-width: 440px; }
-section .main-article .profile-image figure img { width: 100%; vertical-align: top; }
-section .main-article .profile-info { font-size: var(--px-16);}
-section .main-article .profile-info h3 { font-size: var(--px-32); font-weight: 900; }
-section .main-article .profile-info h3 span { display: block; }
-section .main-article .profile-info p { margin: var(--px-10) 0 var(--px-40); color: var(--color-gray-80); }
-section .main-article .profile-info ul { padding: var(--px-20) 0; border: 1px solid var(--color-gray-20); border-width: 1px 0; }
-section .main-article .profile-info ul li strong { display: inline-block; min-width: 80px; max-width: 30%; margin-right: var(--px-14); font-weight: 600; color: var(--color-gray-90); }
+section .main-article .profile { display: flex; justify-content: space-between; align-items: center; gap: var(--px-30); } 
+section .main-article .profile-image { width: 40%; max-width: 440px; } 
+section .main-article .profile-image figure img { width: 100%; vertical-align: top; } 
+section .main-article .profile-info { font-size: var(--px-16); } 
+section .main-article .profile-info h3 { font-size: var(--px-32); font-weight: 900; } 
+section .main-article .profile-info h3 span { display: block; } 
+section .main-article .profile-info p { margin: var(--px-10) 0 var(--px-40); color: var(--color-gray-80); } 
+section .main-article .profile-info ul { padding: var(--px-20) 0; border: 1px solid var(--color-gray-20); border-width: 1px 0; } 
+section .main-article .profile-info ul li strong { display: inline-block; min-width: 80px; max-width: 30%; margin-right: var(--px-14); font-weight: 600; color: var(--color-gray-90); } 
 
-/* about */
-#about .inner { display: flex; gap: 200px; }
-#about .main-article { min-width: max-content; }
-#about .main-article > div { position: sticky; top: 160px;}
-#about .main-article h2 { font-size: 32px; font-weight: 900; }
-#about .main-article p { margin-top: 20px; font-size: 20px; font-weight: 500; }
+/* about, project */
+:where(#about, #project, #contact) .inner { display: flex; gap: 10dvw; } 
+:where(#about, #project, #contact) .section-heading { min-width: 470px; } 
+:where(#about, #project, #contact) .section-heading > div { position: sticky; top: 160px; } 
+:where(#about, #project, #contact) .section-heading h2 { font-size: 32px; font-weight: 900; } 
+:where(#about, #project, #contact) .section-heading p { margin-top: 20px; font-size: 20px; font-weight: 500; } 
+:where(#about, #project, #contact) .section-contents { flex: 1; } 
+:where(#about, #project, #contact) .section-contents article:not(:first-child) { margin-top: 120px; } 
+:where(#about, #project, #contact) .section-contents h3 { margin-bottom: var(--px-20); } 
+:where(#about, #project, #contact) .section-contents h3 span { position: relative; } 
+:where(#about, #project, #contact) .section-contents h3 span::after { content: "꾸밈줄"; position: absolute; top: 50%; left: calc(100% + 20px); width: 100px; height: 2px; background: var(--color-gray-90); font-size: 0; } 
+:where(#about, #project) .section-contents table { width: 100%; margin: 20px 0 0; } 
+:where(#about, #project) .section-contents table caption { display: none; visibility: hidden; } 
+:where(#about, #project) .section-contents table thead th { padding: var(--px-10); background-color: var(--color-gray-5); font-size: 14px; font-weight: 600; } 
+:where(#about, #project) .section-contents table tbody td { padding: var(--px-10); border-bottom: 1px solid var(--color-gray-20); font-size: 13px; font-weight: 500; } 
+:where(#about, #project) .section-contents table tbody td:first-child { text-align: center; } 
+:where(#about, #project) .section-contents table td span { display: inline-block; margin-left: var(--px-16); font-size: var(--px-11); color: var(--color-gray-70); } 
+:where(#about, #project) .section-contents ol { display: flex; flex-wrap: wrap; gap: var(--px-14); } 
+:where(#about, #project) .section-contents ol li { padding: var(--px-10); border: 1px solid var(--color-gray-20); } 
+:where(#about, #project) .section-contents ol li::before { content: "#"; } 
 
-#about .sub-article { flex: 1; }
-#about .sub-article h3 { margin-bottom: var(--px-20); }
-#about .sub-article h3 span { position: relative; }
-#about .sub-article h3 span::after { content: "꾸밈줄"; position: absolute; top: 50%; left: calc(100% + 20px); width: 100px; height: 2px; background: var(--color-gray-90); font-size: 0; }
-#about .sub-article table { width: 100%; margin: 20px 0 120px;}
-#about .sub-article table caption { display: none; visibility: hidden; }
-#about .sub-article table thead th { padding: var(--px-10); background-color: var(--color-gray-5); font-size: 14px; font-weight: 600; }
-#about .sub-article table tbody td { padding: var(--px-10); border-bottom: 1px solid var(--color-gray-20); font-size: 13px; font-weight: 500; }
-#about .sub-article table tbody td:first-child { text-align: center; }
-#about .sub-article table td span { display: inline-block; margin-left: var(--px-16); font-size: var(--px-11); color: var(--color-gray-70); }
-#about .sub-article ol { display: flex; gap: var(--px-14); }
-#about .sub-article ol li { padding: var(--px-10); border: 1px solid var(--color-gray-20); }
-#about .sub-article ol li::before { content: "#"; }
+#project .section-contents article { position: relative; margin-top: 60px; } 
+#project .section-contents article .project-description { display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 30px; position: absolute; top: 50%; width: 48%; text-align: center; transform: translateY(-50%); } 
+#project .section-contents article .project-description .project-title { display: flex; justify-content: center; align-items: center; gap: 10px 15px; position: relative; } 
+#project .section-contents article .project-description .project-title::before { content: ""; position: absolute; top: 2px; left: -13px; width: 1px; height: 25px; background: var(--color-gray-90); rotate: 45deg; } 
+#project .section-contents article .project-description .project-title h5 { position: absolute; top: 2px; left: -40px; font-size: var(--px-10); font-weight: 700; color: var(--color-gray-90); } 
+#project .section-contents article .project-description .project-title h4 { font-size: var(--px-28); font-weight: 900; color: var(--color-gray-90); } 
+#project .section-contents article .project-description p span { display: inline-block; margin: 0 4px; padding: 4px 6px; background: var(--color-gray-5); font-size: var(--px-11); color: var(--color-gray-70); } 
+#project .section-contents article .project-description p span ~ span { margin-left: 2px; } 
+#project .section-contents article .project-description a { display: inline-block; position: relative; font-size: var(--px-14); font-weight: 500; } 
+#project .section-contents article .project-description a::before { content: ""; position: absolute; bottom: -5px; left: 50%; width: 0; height: 2px; background: var(--color-gray-90); transform: translateX(-50%); transition: width .2s; } 
+#project .section-contents article .project-description a:hover::before { width: 100%; } 
+#project .section-contents article .project-image { width: 100%; } 
+#project .section-contents article .project-image img { width: 52%; height: 300px; object-fit: cover; object-position: right center; } 
+#project .section-contents article:nth-of-type(odd) .project-description { right: 0; left: auto; } 
+#project .section-contents article:nth-of-type(even) { text-align: right; } 
 
 /* contact */
-section#contact .inner { display: flex; }
-section#contact .section-title { margin-bottom: var(--px-20); }
-section#contact .section-title h2 { margin: 0; }
-section#contact .section-title h2 span { position: relative; }
-section#contact .section-title h2 span::after { content: "*"; position: absolute; top: calc(var(--px-20) * -1); right: calc(var(--px-24) * -1); font-size: var(--px-40); color: var(--color-point); }
+#contact .section-heading h2 span { position: relative; } 
+#contact .section-heading h2 span::after { content: "*"; position: absolute; top: calc(var(--px-20) * -1); right: calc(var(--px-24) * -1); font-size: var(--px-40); color: var(--color-point); } 
+#contact .section-contents { flex: 1; } 
+#contact .section-contents .contact-list { display: flex; flex-direction: column; gap: var(--px-20); } 
+#contact form legend { display: none; visibility: hidden; } 
+#contact form ul li { display: flex; align-items: center; gap: var(--px-10); margin: 0 0 var(--px-20); } 
+#contact form ul li label { min-width: 100px; font-weight: 500; } 
+#contact form ul li :where(input, textarea) { width: 100%; padding: 10px; border: none; border-radius: 0; background: var(--color-gray-5); font-size: 16px; vertical-align: top; } 
+#contact form ul li :where(input, textarea):focus { outline: none; } 
+#contact form ul li textarea { font: 16px "Pretendard", sans-serif; resize: none; } 
+#contact form button[type="submit"] { display: block; position: relative; width: min-content; margin: 50px auto 0; background: none; font-size: 16px; font-weight: 500; } 
+#contact form button[type="submit"]::before { content: ""; position: absolute; bottom: -5px; left: 50%; width: 0; height: 2px; background: var(--color-gray-90); transform: translateX(-50%); transition: width .2s; } 
+#contact form button[type="submit"]:hover::before { width: 100%; } 

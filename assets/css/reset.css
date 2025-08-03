@@ -1,5 +1,7 @@
 * { margin: 0; padding: 0; border: 0; vertical-align: baseline; box-sizing: border-box; } 
 body { position: relative; background: var(--color-primary); font: 400 16px "Pretendard", sans-serif; color: var(--color-gray-90); letter-spacing: -0.03em; line-height: 1.5; } 
+h1, h2, h3, h4, h5, h6 { margin: 0; }
 ol, ul { list-style: none; } 
 table { border-collapse: collapse; border-spacing: 0; } 
 a { text-decoration: none; color: inherit; } 
+img { vertical-align: top; }
